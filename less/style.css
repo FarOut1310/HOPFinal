@@ -1,0 +1,405 @@
+/* LESS Document */
+@import url('https://fonts.googleapis.com/css?family=Acme|PT+Sans');
+@media (min-width: 1200px) {
+  .senzBody {
+    display: grid;
+    grid-template-areas: 'header header header header header' 'main main main main main' 'footer footer footer footer footer';
+  }
+  .senzHeader {
+    grid-area: header;
+    width: 100%;
+  }
+  .senzHeader__lang {
+    display: block;
+    float: right;
+  }
+  .senzHeader__lang--img {
+    margin-right: 10px;
+  }
+  .senzHeader__logo {
+    margin: auto;
+    display: block;
+  }
+  .senzHeader__nav {
+    text-align: center;
+    margin-top: 1%;
+    border-top: solid #4bb04c;
+    border-bottom: solid #4bb04c;
+    height: 70px;
+  }
+  .senzHeader__nav--a {
+    display: inline-block;
+    margin: 7px 0 0 0;
+    color: #4bb04c;
+    background-color: white;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    padding: 10px 3%;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .senzHeader__nav--a:hover {
+    color: white;
+    background-color: #4bb04c;
+    border-color: black;
+  }
+  .senzFooter {
+    grid-area: footer;
+    width: 100%;
+    background-color: #4bb04c;
+    border: solid black;
+  }
+  .senzFooter__h3 {
+    color: white;
+    text-align: left;
+    margin-left: 4%;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .senzFooter__p {
+    color: white;
+    text-align: left;
+    margin-left: 4%;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .senzFooter__p--a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .indexMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 600px;
+    margin-top: 2%;
+  }
+  .indexMain__text {
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .indexMain__text--h2 {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 3%;
+  }
+  .indexMain__text--p {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+  }
+  .indexMain__text--img {
+    margin-top: 100px;
+    margin-left: 2%;
+    height: 170px;
+    width: 170px;
+  }
+  .contactMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+  }
+  .contactMain__login {
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  .contactMain__login--form {
+    text-align: left;
+  }
+  .contactMain__login--label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+  }
+  .contactMain__login--input {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    width: 150px;
+    height: 20px;
+  }
+  .contactMain__login--submit {
+    height: 25px;
+    width: 50px;
+    background-color: #4bb04c;
+    font-family: 'Acme', sans-serif;
+    font-size: 10px;
+    color: white;
+  }
+  .contactMain__text {
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 65px;
+    /*&--img {
+				display: block;
+				margin: auto;
+				margin-top: 25px;
+				width: 500px;
+				height: auto;
+			}*/
+  }
+  .contactMain__text--h2 {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 25px;
+  }
+  .contactMain__text--p {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+  }
+  .contactMain__text--a {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .contactMain__formBox {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contactMain__formBox--h3 {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .contactMain__form {
+    text-align: center;
+  }
+  .contactMain__form--label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .contactMain__form--input {
+    margin-bottom: 30px;
+    height: 30px;
+    width: 350px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  .contactMain__form--textarea {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  .contactMain__form--submit {
+    margin-bottom: 50px;
+    height: 50px;
+    width: 100px;
+    background-color: #4bb04c;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+  .productsMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+  }
+  .productsMain__h2 {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .productsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .productBox__btn {
+    width: 500px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  #bedL {
+    background-image: url("../images/blinen.jpg");
+  }
+  #kitchen {
+    background-image: url("../images/kitchen.jpg");
+  }
+  #towels {
+    background-image: url("../images/towels.jpg");
+  }
+  #bathroom {
+    background-image: url("../images/bathroom.jpg");
+  }
+  #pillow {
+    background-image: url("../images/pillows.jpg");
+  }
+  #tbcloth {
+    background-image: url("../images/tbcloth.jpg");
+  }
+  #beanbag {
+    background-image: url("../images/beanbag.jpg");
+  }
+  #totebag {
+    background-image: url("../images/totebag.jpg");
+  }
+  #fleece {
+    background-image: url("../images/fleece.jpg");
+  }
+  #felt {
+    background-image: url("../images/felt.jpg");
+  }
+  .productBox__content {
+    background: #ebe8e8;
+    padding: 0;
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 2%;
+    display: none;
+  }
+  .productBox__content--ul {
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 15px;
+  }
+  /*&__kitchen {
+			background-image: url("../images/kitchen.jpg");
+			height: 300px;
+			width: auto;
+		}
+		
+		&__bathroom {
+			background-image: url("../images/bathroom.jpg");
+			height: 300px;
+			width: auto;
+		}
+		
+		&__bedroom {
+			background-image: url("../images/bedroom.jpeg");
+			height: 300px;
+			width: auto;
+			margin-bottom: 2%;
+		}
+		
+		&__section {
+			text-align: left;
+			background: rgba(235, 232, 232, 0.5);
+			height: 300px;
+			&--h3 {
+				font-family: @text-font;
+				margin-left: 35px;
+				padding-top: 20px;
+			}
+			&--h4 {
+				font-family: @text-font;
+				margin-left: 35px;
+			}
+			&--p {
+				font-family: @text-font;
+				margin-left: 35px;
+			}
+		}
+	}*/
+  .csrMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    height: 600px;
+  }
+  .csrMain__section {
+    text-align: center;
+  }
+  .csrMain__section--h2 {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .csrMain__section--p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+  }
+  .csrMain__section--li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 1%;
+  }
+  .adminMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+  }
+  .adminMain__h2 {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .adminMain__section--h3 {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .adminMain__section--a {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .adminMain__section--p {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .adminMain__section--article {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .adminContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .adminContainer__box {
+    width: 400px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  .aboutMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 600px;
+    margin-top: 2%;
+  }
+  .aboutMain__h2 {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .aboutMain__article {
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    width: 1200px;
+    height: 500px;
+    background-image: url("../images/outoutlet.jpg");
+  }
+  .aboutMain__article--bg {
+    background: rgba(235, 232, 232, 0.7);
+    height: 500px;
+  }
+  .aboutMain__article--p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .sendMain {
+    grid-area: main;
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 600px;
+    margin-top: 2%;
+  }
+  .sendMain__article {
+    text-align: left;
+  }
+  .sendMain__article--h3 {
+    font-family: 'PT Sans', sans-serif;
+  }
+  .sendMain__article--p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+  }
+}

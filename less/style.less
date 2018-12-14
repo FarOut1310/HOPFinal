@@ -1,0 +1,498 @@
+/* LESS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|PT+Sans');
+
+@link-font: 'Acme', sans-serif;
+@text-font: 'PT Sans', sans-serif;
+@light-green: #4bb04c;
+@font-black: black;
+@font-white: white;
+@text-font-size: 20px;
+@content-background: #ebe8e8;
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.senzBody {
+		display: grid;
+		grid-template-areas: 
+			'header header header header header'
+			'main main main main main'
+			'footer footer footer footer footer';
+	}
+	
+	.senzHeader {
+		grid-area: header;
+		width: 100%;
+		
+		&__lang {
+			display: block;
+			float: right;
+			&--img {
+				margin-right: 10px;
+			}
+		}
+		
+		&__logo {
+			margin: auto;
+			display: block;
+		}
+		
+		&__nav {
+			text-align: center;
+			margin-top: 1%;
+			border-top: solid @light-green;
+			border-bottom: solid @light-green;
+			height: 70px;
+			&--a {
+				display: inline-block;
+				margin: 7px 0 0 0;
+				color: @light-green;
+				background-color: white;
+				font-family: @link-font;
+				font-size: 30px;
+				//border-style: solid;
+				padding: 10px 3%;
+				text-decoration: none;
+				transition: 0.3s;
+				&:hover {
+					color: white;
+					background-color: @light-green;
+					border-color: black;
+				}
+			}
+		}
+	}
+	
+	.senzFooter {
+		grid-area: footer;
+		width: 100%;
+		background-color: @light-green;
+		border: solid black;
+		
+		&__h3 {
+			color: white;
+			text-align: left;
+			margin-left: 4%;
+			font-family: @text-font;
+		}
+		
+		&__p {
+			color: white;
+			text-align: left;
+			margin-left: 4%;
+			font-family: @text-font;
+			
+			&--a {
+				text-decoration: none;
+				font-family: @text-font;
+			}
+		}
+	}
+	
+	.indexMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		height: 600px;
+		margin-top: 2%;
+		
+		&__text {
+			text-align: left;
+			font-family: @text-font;
+			
+			&--h2 {
+				color: black;
+				font-family: @text-font;
+				margin-bottom: 3%;
+			}
+			
+			&--p {
+				color: black;
+				font-family: @text-font;
+				font-size: 20px;
+			}
+			
+			&--img {
+				margin-top: 100px;
+				margin-left: 2%;
+				height: 170px;
+				width: 170px;
+				//border-radius: 50%;
+				//border: 10px solid @light-green;
+			}
+		}
+	}
+	
+	.contactMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		margin-top: 2%;
+		
+		&__login {
+			float: right;
+			margin: 0;
+			padding: 0; 
+			
+			&--form {
+				text-align: left;
+			}
+			
+			&--label {
+				font-family: @text-font;
+				font-size: 15px;
+			}
+			
+			&--input {
+				font-family: @text-font;
+				font-size: 15px;
+				width: 150px;
+				height: 20px;
+			}
+			
+			&--submit {
+				height: 25px;
+				width: 50px;
+				background-color: @light-green;
+				font-family: @link-font;
+				font-size: 10px;
+				color: white;
+			}
+		}
+		
+		&__text {
+			text-align: left;
+			font-family: @text-font;
+			margin-bottom: 65px;
+			
+			&--h2 {
+				color: black;
+				font-family: @text-font;
+				margin-bottom: 25px;
+			}
+			
+			&--p {
+				color: black;
+				font-family: @text-font;
+				font-size: 20px;
+			}
+			
+			&--a {
+				font-family: @text-font;
+			}
+			
+			/*&--img {
+				display: block;
+				margin: auto;
+				margin-top: 25px;
+				width: 500px;
+				height: auto;
+			}*/
+		}
+		
+		&__formBox {
+			width: 70%;
+			display: block;
+			margin: auto;
+			margin-top: 50px;
+			text-align: center;
+			
+			&--h3 {
+				font-family: @text-font;
+			}
+		}
+		
+		&__form {
+			text-align: center;
+			
+			&--label {
+				font-family: @text-font;
+				font-size: 20px;
+				margin-right: 10px;
+			}
+			
+			&--input {
+				margin-bottom: 30px;
+				height: 30px;
+				width: 350px;
+				font-family: @text-font;
+				font-size: 20px;
+				color: black;
+			}
+			&--textarea{
+				font-family: @text-font;
+				font-size: 20px;
+				color: black;
+			}
+			&--submit {
+				margin-bottom: 50px;
+				height: 50px;
+				width: 100px;
+				background-color: @light-green;
+				font-family: @link-font;
+				font-size: 20px;
+				color: white;
+			}
+		}
+	}
+	
+	.productsMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		margin-top: 2%;
+		
+		&__h2 {
+			font-family: @text-font;
+			text-align: center;
+			margin-bottom: 2%;
+		}
+		
+	}
+	
+	.productsContainer {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	
+	.productBox__btn {
+		width: 500px;
+		height: 100px;
+		display: block;
+		margin: auto;
+		margin-bottom: 2%;
+		font-family: @link-font;
+		font-size: 25px;
+		color: white;
+		-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: black;
+	}
+	
+	#bedL {
+		background-image: url("../images/blinen.jpg");
+	}
+	#kitchen {
+		background-image: url("../images/kitchen.jpg");
+	}
+	#towels {
+		background-image: url("../images/towels.jpg");		
+	}
+	#bathroom {
+		background-image: url("../images/bathroom.jpg");		
+	}
+	#pillow {
+		background-image: url("../images/pillows.jpg");		
+	}
+	#tbcloth {
+		background-image: url("../images/tbcloth.jpg");		
+	}
+	#beanbag {
+		background-image: url("../images/beanbag.jpg");
+	}
+	#totebag {
+		background-image: url("../images/totebag.jpg");		
+	}
+	#fleece {
+		background-image: url("../images/fleece.jpg");		
+	}
+	#felt {
+		background-image: url("../images/felt.jpg");		
+	}
+	
+	.productBox__content {
+		background: @content-background;
+		padding: 0;
+		width: 500px;
+		overflow: hidden;
+		margin: auto;
+		margin-bottom: 2%;
+		display: none;
+		
+		&--ul {
+			font-family: @text-font;
+			color: black;
+			font-size: 15px;
+		}
+	}
+		
+		/*&__kitchen {
+			background-image: url("../images/kitchen.jpg");
+			height: 300px;
+			width: auto;
+		}
+		
+		&__bathroom {
+			background-image: url("../images/bathroom.jpg");
+			height: 300px;
+			width: auto;
+		}
+		
+		&__bedroom {
+			background-image: url("../images/bedroom.jpeg");
+			height: 300px;
+			width: auto;
+			margin-bottom: 2%;
+		}
+		
+		&__section {
+			text-align: left;
+			background: rgba(235, 232, 232, 0.5);
+			height: 300px;
+			&--h3 {
+				font-family: @text-font;
+				margin-left: 35px;
+				padding-top: 20px;
+			}
+			&--h4 {
+				font-family: @text-font;
+				margin-left: 35px;
+			}
+			&--p {
+				font-family: @text-font;
+				margin-left: 35px;
+			}
+		}
+	}*/
+	
+	.csrMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		margin-top: 2%;
+		height: 600px;
+		
+		&__section {
+			text-align: center;
+			&--h2 {
+				font-family: @text-font;
+			}
+			&--p {
+				font-family: @text-font;
+				font-size: 20px;
+			}
+			&--li {
+				list-style-type: none;
+				display: inline-block;
+				margin-top: 25px;
+				margin-left: 1%;
+			}
+		}
+	}
+	
+	.adminMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		margin-top: 2%;
+		
+		&__h2 {
+			font-family: @text-font;
+		}
+		
+		&__section {
+			&--h3 {
+				font-family: @text-font;
+			}
+			&--a {
+				font-family: @text-font;
+			}
+			&--p {
+				font-family: @text-font;
+			}
+			&--article {
+				font-family: @text-font;
+			}
+		}
+	}
+	
+	.adminContainer {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		&__box {
+			width: 400px;
+			border: 2px solid black;
+			padding: 10px;
+			margin-bottom: 25px;
+		}
+	}
+	
+	.aboutMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		height: 600px;
+		margin-top: 2%;
+		
+		&__h2 {
+			font-family: @text-font;
+		}
+		
+		&__article {
+			text-align: left;
+			font-family: @text-font;
+			width: 1200px;
+			height: 500px;
+			background-image: url("../images/outoutlet.jpg");
+			
+			&--bg {
+				background: rgba(235, 232, 232, 0.7);
+				height: 500px;
+			}
+			
+			&--p {
+				font-family: @text-font;
+				font-size: 25px;
+				padding: 10px;
+			}
+		}
+	}
+	
+	.sendMain {
+		grid-area: main;
+		width: 80%;
+		display: block;
+		margin: auto;
+		height: 600px;
+		margin-top: 2%;
+		
+		&__article {
+			text-align: left;
+			
+			&--h3 {
+				font-family: @text-font;
+			}
+			
+			&--p {
+				font-family: @text-font;
+				font-size: 15px;
+			}
+		}
+	}
+	
+}
